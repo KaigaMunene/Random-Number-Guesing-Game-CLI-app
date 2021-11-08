@@ -26,3 +26,22 @@ def generate_score(guesses_taken):
   initial_score = 6
   score = initial_score - guesses_taken
   return score
+
+guesses_taken = 0
+comp_number = generate_random_numbers()
+while guesses_taken < 5:
+  guess = enter_input() 
+  guesses_taken = guesses_taken + 1
+  if guess < comp_number :
+      print("Your geuss is too low")
+  if guess > comp_number :
+      print("Your guess is too high")
+  if comp_number % 2 == 0:
+      print("The comp_number is a multiple of 2")
+  if comp_number % 3 == 0:
+      print("The comp_number is a multiple of 3")
+  if comp_number % 5 == 0:
+      print("The comp_number is a multiple of 5")
+  if guess == comp_number:
+      print(f"Yeah you\"ve got it, this is your score: {generate_score(guesses_taken)}")
+      break
