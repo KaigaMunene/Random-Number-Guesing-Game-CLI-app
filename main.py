@@ -18,3 +18,11 @@ def generate_random_numbers():
   endpoint = enter_input()
   random_number = random.randrange(1, endpoint)
   return random_number
+
+def generate_score(guesses_taken):
+  ''' 
+  function to return the score of the User
+  '''
+  initial_score = 6
+  score = initial_score - guesses_taken
+  return score
