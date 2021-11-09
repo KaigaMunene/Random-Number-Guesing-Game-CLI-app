@@ -31,7 +31,7 @@ guesses_taken = 0
 comp_number = generate_random_numbers()
 while guesses_taken < 5:
   guess = enter_input() 
-  guesses_taken = guesses_taken + 1
+  guesses_taken += 1
   if guess < comp_number :
       print("Your geuss is too low")
   if guess > comp_number :
