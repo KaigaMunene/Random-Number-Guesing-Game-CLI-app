@@ -15,6 +15,7 @@ def generate_random_numbers():
   ''' 
   function for getting a random number from a range specified by user.
   '''
+  print("Enter the rangepoint: ")
   endpoint = enter_input()
   random_number = random.randrange(1, endpoint)
   return random_number
@@ -26,6 +27,9 @@ def generate_score(guesses_taken):
   initial_score = 6
   score = initial_score - guesses_taken
   return score
+
+print("I am thinking of a number.")
+print("Take a guess:")
 
 guesses_taken = 0
 comp_number = generate_random_numbers()
