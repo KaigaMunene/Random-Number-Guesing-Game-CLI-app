@@ -1,6 +1,6 @@
 # Random-Number-Guesing-Game-CLI-app
 ## A project for guessing a random number.
-## Build a CLI app that generates a random number from
+Build a CLI app that generates a random number from
 1 to 10, or 1 to 100 or any range
 that is specified on user input. The user must guess
 the number after a hint from your
